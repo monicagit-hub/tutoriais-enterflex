@@ -4,31 +4,47 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Central de Tutoriais - Enterflex</title>
-  
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>Central de Tutoriais </h1>
-    <img src="./img/logo.png" alt="Logo Enterflex">
-  </header>
+  <div class="topo">
+    <!-- Esquerda: Logo -->
+    <div class="logo-titulo">
+      <img src="./img/logo.png" alt="Logo da Enterflex" />
+    </div>
+
+   <!-- Direita: Contato -->
+     <div class="contato-header">
+        <a href="https://wa.me/554730301010" target="_blank" title="WhatsApp">
+      📞 (47) 3030-1010
+        </a>
+        <a href="mailto:suporte2@enterflex.com.br" title="E-mail">
+          📧 suporte2@enterflex.com.br
+        </a>
+      </div>
+</header>
 
   <main>
-    <p>Bem-vindo(a)! Abaixo estão os materiais de apoio disponíveis para você:</p>
-    <input type="text" id="filtro" placeholder="🔍 Filtrar documentos..." onkeyup="filtrarDocumentos()" />
+     <div class="titulo-central">
+        <span>📚</span>
+        <span>Central de Tutoriais</span>
+      </div>
+      <p class="titulo-central">Bem-vindo(a), abaixo estão os materiais de apoio disponíveis para você!</p>
+    
+    <input type="text" id="filtro" placeholder="🔍 Filtrar documentos..." onkeyup="filtrarDocumentos()" aria-label="Filtrar documentos por nome" />
 
-    <ul>
+    <ul class="link-pdf">
       <li><a href="docs/Emitindo-uma-NF-Estorno-Cancelada-fora-Prazo-Legal.pdf" target="_blank">📄 Como Emitir uma NF-e de Estorno para NF-e Não Cancelada no Prazo Legal</a></li>
-      <li><a href="docs/Emitir-nota-de-entrada-via-importacao-XML.pdf" target="_blank">📄 Emitir Nota de Entrada via Importacao XML</a></li>
+      <li><a href="docs/Emitir-nota-de-entrada-via-importacao-XML.pdf" target="_blank">📄 Emitir Nota de Entrada via Importação XML</a></li>
       <li><a href="docs/Módulo-Geral-CFOP.pdf" target="_blank">📄 Módulo Completo: CFOP | Natureza da Operação</a></li>
     </ul>
   </main>
 
   <footer>
-    Suporte Enterflex – Criado por Mônica Marçal
+   © Copyright 2025 | Suporte Enterflex – Criado por Mônica Marçal
   </footer>
 
   <script src="script.js"></script>
-
 </body>
 </html>

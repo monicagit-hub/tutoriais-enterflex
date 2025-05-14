@@ -1,4 +1,5 @@
-/* Reset básico */
+
+/*Reset básico */
 * {
   margin: 0;
   padding: 0;
@@ -7,32 +8,80 @@
 
 body {
   font-family: "Segoe UI", sans-serif;
-  background-color: #f9f9f9;
+  background-color: #b3a9a9;
   line-height: 1.6;
 }
 
 /* Cabeçalho */
 header {
   background-color: #0c2d72;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
+  color: #7b8197;
+  padding: 20px 40px;
+}
+
+.topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo-titulo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo-titulo img {
+  height: 50px;
+}
+
+.logo-titulo h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.contato-header {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  font-size: 15px;
+
+}
+
+.contato-header a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contato-header a:hover {
+  color: #9af3e7;
 }
 
 /* Conteúdo principal */
 main {
   max-width: 900px;
   margin: 40px auto;
-  background: #fff;
+  background: #e7e7e7;
   padding: 30px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.05);
   border-radius: 8px;
 }
+
+.titulo-central{
+  text-align: center;
+  font-size: 14px;
+  margin-top: 10px;
+  color: #303030;
+  padding-bottom: 10px;
+}
+
 #filtro {
   width: 100%;
   padding: 12px;
   margin-bottom: 20px;
-  border: 1px solid #ccc;
+  border: 1px solid #303030;;
   border-radius: 6px;
   font-size: 16px;
 }
@@ -46,7 +95,7 @@ p {
   color: #333;
 }
 
-/* Lista de PDFs */
+/* Lista de PDFs*/
 ul {
   list-style-type: none;
   padding: 0;
@@ -55,10 +104,9 @@ ul {
 li {
   margin-bottom: 20px;
 }
-
-a {
-  display: block;
-  background-color: #e6f0ff;
+.link-pdf a{
+ display: block;
+  background-color: #e9f1fb;
   padding: 15px;
   border-left: 5px solid #0c2d72;
   text-decoration: none;
@@ -68,8 +116,8 @@ a {
   transition: background-color 0.2s;
 }
 
-a:hover {
-  background-color: #d0e4ff;
+.link-pdf li a:hover {
+  background-color: #9af3e7;
 }
 
 /* Rodapé */
@@ -77,7 +125,7 @@ footer {
   text-align: center;
   font-size: 14px;
   margin-top: 40px;
-  color: #888;
+  color: #303030;
   padding-bottom: 20px;
 }
 
@@ -86,6 +134,17 @@ footer {
   main {
     margin: 20px;
     padding: 20px;
+  }
+
+  .topo {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contato-header {
+    justify-content: center;
+    margin-top: 10px;
   }
 
   a {
